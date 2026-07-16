@@ -15,3 +15,6 @@ app.get('/mensaje/:nombre', (req, res) => {
   const nombre = req.params.nombre;
   res.send('Hola ' + nombre);
 });
+app.listen(3000, () => {
+  console.log('Servidor ejecutándose en puerto 3000');
+});
